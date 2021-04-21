@@ -1,0 +1,71 @@
+{
+	"identite": [{
+		"id": 1,
+		"nom": "VANKEMBO",
+		"postnom": "Kiala",
+		"prenom": "Medi",
+		"photo": "#",
+		"domaine": "Développeur Full Stack & UX-Research Designer.",
+		"apropos": "Je suis un développeur Web Full Stack, passionné du numérique.Actuellement apprenant à la Kinshasa Digital Academy dans la filière du Développement Web et Web Mobile, après avoir passé un stage professionnel dans une structure basée à Kinshasa, Capitale de la République Démocratique du Congo, où j'ai appris et compris beaucoup de choses. Le digital occupe une place importante dans le. Mon amour et ma découverte du monde numérique ne datent pas d'aujourd'hui: Après avoir obtenu mon Bac en Pédagogie en 2012, j'ai embrassé à l'université, une formation dans la Science Informatique, et à l'issue de laquelle j'ai obtenu le titre d'Ingénieur-Concepteur des Systèmes d'Information Informatisés.",
+		"email": "vankembo.m@gmail.com",
+		"lien_github": "https://github.com/medivankembo",
+		"lien_linkedin": "https://www.linkedin.com/in/medi-vankembo",
+		"lien_facebook": "https://web.facebook.com/medi.vankembo",
+		"lien_twitter": "#"
+	}],
+	"projet": [{
+		"id": 1,
+		"titre": "Structurer un document HTML",
+		"description": "Structurer un document HTML en respectant la maquette tout en omettant tous les éléments de style(couleurs, positionnement) pour ne pas avoir du code CSS.",
+		"lien_image": "#",
+		"debut": "11/02/2021",
+		"fin": "17/02/2021",
+		"outils": "HTML",
+		"lien_github": "#",
+		"lien_site": "#",
+		"categorie": "#"
+	}],
+	"competences": [{
+			"id": 1,
+			"designation": "HTML",
+			"logo": "#",
+			"maitrise": 90
+		},
+		{
+			"id": 2,
+			"designation": "CSS",
+			"logo": "#",
+			"maitrise": 60
+		},
+		{
+			"id": 3,
+			"designation": "JAVASCRIPT",
+			"logo": "#",
+			"maitrise": 65
+		},
+		{
+			"id": 4,
+			"designation": "SASS",
+			"logo": "#",
+			"maitrise": 60
+		},
+		{
+			"id": 5,
+			"designation": "PYTHON",
+			"logo": "#",
+			"maitrise": 70
+		},
+		{
+			"id": 6,
+			"designation": "SQL",
+			"logo": "#",
+			"maitrise": 85
+		}
+	],
+	"contact": [{
+		"id": 1,
+		"noms": "",
+		"email": "",
+		"message": ""
+	}]
+}

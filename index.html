@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Van Portfolio</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    
+    <link rel="stylesheet" href="css/style_final.css">
+
+</head>
+
+<body>
+    <!--Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg white scrolling-navbar bg-dark p-3 menu">
+        <div class="container">
+    
+            <!-- Brand -->
+            <!-- 
+            <a class="navbar-brand waves-effect" href="#">Van.
+            <img height="20px" src="media/images/logo.png" alt="Logo">  
+            </a>
+            -->
+    
+            <!-- Collapse -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+            <!-- Left -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link waves-effect menu--style" href="#introductionId">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect menu--style" href="#projetsId">Projet</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect menu--style" href="#aproposId">A propos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect menu--style" href="#contactId">Contact</a>
+                </li>
+            </ul>
+    
+            <!-- Right -->
+            <ul class="navbar-nav nav-flex-icons p-0">
+                <li class="nav-item">
+                    <a  id="lienLinkedin" href="https://www.linkedin.com/in/medi-vankembo" class="nav-link waves-effect menu--style" target="_blank">
+                        <i class="fab fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a id="lienGithub" href="https://github.com/medivankembo" class="nav-link waves-effect menu--style" target="_blank">
+                        <i class="fab fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a id="lienFacebook" href="https://web.facebook.com/medi.vankembo" class="nav-link waves-effect menu--style" target="_blank" p-0>
+                    <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>                 
+            </ul>
+        </div>
+    </nav>
+    <!-- Fin Navbar-->
+    
+    <!--section1 -->
+    <section class="section1 section1--style" id="introductionId">
+
+        <!-- Image de fond-->
+        <div class="image-fond section1__image-fond section1__image-fond--style"></div>
+        
+        <!-- Zone de message -->
+        <div class="section1__message section1__message--style">
+            <div>
+                <h1 id="grandTitre"></h1>
+                <P id="domaine"></P>
+            </div>
+            <hr class="soulignement soulignement--blanc">
+            <div>
+                <a href="#contactId" class="bouton bouton--blanc">ME CONTACTER</a>
+            </div>
+        </div>
+        
+    </section>
+    <!-- Fin section1-->
+
+    <!-- Section2 "Projets réalisés"-->
+    <section class="section2 section2--style" id="projetsId">
+        <p class="titre-section titre-section--style">Projets</p>
+        <hr class="soulignement soulignement--rouge">
+        <p class="message-section message-section--style">Voici quelques de nos projets déjà réalisés</p>
+
+            <div class="container my-5" id="projetsId">
+                <!-- Modal -->
+                <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body p-0">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                
+                                <!-- Grid row -->
+                                <div class="row">
+                                
+                                    <!-- Grid column -->
+                                    <div class="col-md-6 py-5 pl-5">
+                                        
+                                        <h5 class="font-weight-normal mb-3">Déscription du produit</h5>
+
+                                        <p class="text-muted">Réaliser un site internet Portfolio afin de présenter vos compétences, votre parcours.</p>
+
+                                        <ul class="list-unstyled font-small mt-5">
+                                        <li>
+                                            <p class="text-uppercase mb-2"><strong>Client</strong></p>
+                                            <p class="text-muted mb-4">KDA.</p>
+                                        </li>
+
+                                        <li>
+                                            <p class="text-uppercase mb-2"><strong>Téchnologies utilisées</strong></p>
+                                            <p class="text-muted mb-4">HTML, CSS, Sass, MDBootstrap, Javascript</p>
+                                        </li>
+
+                                        <li>
+                                            <p class="text-uppercase mb-2"><strong>Lien vers le site</strong></p>
+                                            <a href="#">https//...</a>
+                                        </li>
+
+                                        
+
+                                        <li>
+                                            <p class="text-uppercase mb-2"><strong>Lien GitHub</strong></p>
+                                            <a href="#">https://...</a>
+                                        </li>
+                                        </ul>
+                                        
+                                    </div>
+                                    <!-- Grid column -->
+                                
+                                    <!-- Grid column -->
+                                    <div class="col-md-6">
+                                        
+                                        <div class="view rounded-right">
+                                            <img class="img-fluid" src="media/images/projets/Maquette.jpg" alt="Sample image">
+                                        </div>
+                                        
+                                    </div>
+                                    <!-- Grid column -->
+                                
+                                </div>
+                                <!-- Grid row -->
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="container tab-content mb-5">
+    
+               <!--Panel 1-->
+              <div class="tab-pane fade show in active" id="panel31" role="tabpanel">
+          
+                  <!-- Grid row -->
+                  <div class="row">
+          
+                      <!-- Grid column -->
+                      <div class="col-md-12 col-lg-4">
+              
+                          <!-- Card -->
+                            <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal">
+                
+                                <!-- Card image -->
+                                <img class="card-img-top" src="resources/images/Maquette.jpg" alt="Card image cap">
+                
+                                <!-- Card content -->
+                                <div class="card-body">
+                    
+                                    <h5 class="my-3">Projet 1</h5>
+                                    <p class="card-text text-uppercase mb-3">Site en Html pur</p>
+                    
+                                </div>
+                
+                            </a>
+                          <!-- Card -->
+                          <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal">
+              
+                              <!-- Card image -->
+                              <img class="card-img-top" src="resources/images/Maquette.jpg" alt="Card image cap">
+                  
+                              <!-- Card content -->
+                              <div class="card-body">
+                  
+                                  <h5 class="my-3">Projet 1</h5>
+                                  <p class="card-text text-uppercase mb-3">Site en Html pur</p>
+                  
+                              </div>
+              
+                          </a>
+                          <!-- Card -->
+              
+                      </div>
+                      <!-- Grid column -->
+              
+                      <!-- Grid column -->
+                      <div class="col-md-6 col-lg-4">
+              
+                          <!-- Card -->
+                          <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal">
+              
+                              <!-- Card image -->
+                              <img class="card-img-top" src="resources/images/Maquette.jpg" alt="Card image cap">
+                  
+                              <!-- Card content -->
+                              <div class="card-body">
+                  
+                                  <h5 class="my-3">Projet 1</h5>
+                                  <p class="card-text text-uppercase mb-3">Site en Html pur</p>
+                  
+                              </div>
+              
+                          </a>
+                          <!-- Card -->
+                          <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal">
+              
+                              <!-- Card image -->
+                              <img class="card-img-top" src="resources/images/Maquette.jpg" alt="Card image cap">
+                  
+                              <!-- Card content -->
+                              <div class="card-body">
+                  
+                                  <h5 class="my-3">Projet 1</h5>
+                                  <p class="card-text text-uppercase mb-3">Site en Html pur</p>
+                  
+                              </div>
+              
+                          </a>
+                          <!-- Card -->
+              
+                      </div>
+                      <!-- Grid column -->
+              
+                      <!-- Grid column -->
+                      <div class="col-md-6 col-lg-4">
+              
+                          <!-- Card -->
+                          <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal">
+              
+                              <!-- Card image -->
+                              <img class="card-img-top" src="resources/images/Maquette.jpg" alt="Card image cap">
+                  
+                              <!-- Card content -->
+                              <div class="card-body">
+                  
+                                  <h5 class="my-3">Projet 1</h5>
+                                  <p class="card-text text-uppercase mb-3">Site en Html pur</p>
+                  
+                              </div>
+              
+                          </a>
+                          <!-- Card -->
+                          <a class="card hoverable mb-4" data-toggle="modal" data-target="#basicExampleModal">
+              
+                              <!-- Card image -->
+                              <img class="card-img-top" src="resources/images/Maquette.jpg" alt="Card image cap">
+                  
+                              <!-- Card content -->
+                              <div class="card-body">
+                  
+                                  <h5 class="my-3">Projet 1</h5>
+                                  <p class="card-text text-uppercase mb-3">Site en Html pur</p>
+                  
+                              </div>
+              
+                          </a>
+                          <!-- Card -->
+              
+                      </div>
+                      <!-- Grid column -->
+              
+                  </div>
+                      <!-- Grid row -->
+          
+              </div>
+              <!--Panel 1-->
+          </div>
+          <!--/ Div projet -->
+    <!-- Fin section2-->
+
+    <!-- Section3 "A propos de l'auteur"-->
+    <section class="section3 section3--style" id="aproposId">
+            <p class="titre-section titre-section--style">A propos</p>
+            <hr class="soulignement soulignement--rouge">
+
+            <div class="carte carte--style">
+
+                    <div class="carte__photo carte__photo--style">
+                        <img src="media/images/Van.jpg" alt="Photo de Van">
+                    </div>
+
+                    <div class="carte__texte carte__texte--style">
+                        <p class="nom-developpeur">Medi  VANKEMBO  KIALA</p>
+                        <p class="biographie-developpeur">Je suis un développeur Web Full Stack, passionné du numérique.Actuellement apprenant à la Kinshasa Digital Academy dans la filière du Développement Web et Web Mobile.</p>
+                    </div>
+            
+            </div>
+            <div>
+                <a class="bouton bouton--blue" href="media/doc/doc.pdf">VOIR MON CV (PDF)</a>
+            </div>
+        </div>
+
+    </section>
+    <!-- Fin section3-->
+
+    <!-- Section4 "Formulaire de contact"-->
+ 
+    <section class="section4 section4--style" id="contactId">
+
+        <p class="titre-section titre-section--style">Me contacter</p>
+        <hr class="soulignement soulignement--rouge">
+
+        <div class="container my-5" id="formulaireId">
+            <!--Section: Content-->
+            <section class="text-center dark-grey-text mb-5">
+        
+                <div class="card">
+                    <div class="card-body rounded-top border-top p-5">
+                    
+                        <!-- Section heading -->
+                        <h3 class="font-weight-bold my-4">Formulaire de Contact</h3>
+                        <!-- Section description -->
+                        <p class="font-weight-light mx-auto mb-4 pb-2">Veillez remplir ce formulaire, tout en précisant dans le champs message, vos préoccupations et attentes.</p>
+    
+                        <form class="mb-4 mx-md-5" action="">
+    
+                            <div class="row">
+                                <div class="col-md-6 mb-4">
+    
+                                    <!-- Name -->
+                                    <input type="text" id="name" class="form-control" placeholder="Noms">
+    
+                                </div>
+                                <div class="col-md-6 mb-4">
+    
+                                    <!-- Email -->
+                                    <input type="email" id="email" class="form-control" placeholder="Email">
+    
+                                </div>
+                            </div>
+    
+                            <div class="row">
+                                <div class="col-md-12">
+    
+                                    <div class="form-group mb-4">
+                                    <textarea class="form-control rounded" id="message" rows="3" placeholder="Message"></textarea>
+                                    </div>
+    
+                                    <div class="text-center">
+                                    <button type="submit" class="bouton bouton--blue">ENVOYER</button>
+                                    </div>
+    
+                                </div>
+                            </div>
+    
+                        </form>
+                    
+                    </div>
+                </div>
+        
+            </section>
+            <!--Section: Content--> 
+        </div>
+    </section>
+<!--
+        <div class="formulaire formulaire--style">
+            <div class="formulaire__entete">
+                <p  class="formulaire__titre formulaire__titre--style">Formulaire de contact</p>
+                <p class="formulaire__note formulaire__note--style">Veillez remplir ce formulaire, tout en précisant dans le champs message, vos préoccupations et attentes.</p>
+            </div>
+
+            <form action="#" method="POST" class="formulaire__contenu formulaire__contenu--style">
+    
+                <div class="saisie saisie--style">
+                    <div class="inputs">
+                        <input class="saisie__pour-inputs saisie__pour-inputs--style" type="text" placeholder="Noms">
+                        <input class="saisie__pour-inputs saisie__pour-inputs--style" type="email" placeholder="E-mail">
+                    </div>
+                    
+                    <div class="saisie__pour-textarea saisie__pour-textarea--style">
+                        <textarea name="#" id="" rows="10" placeholder="Message"></textarea>
+                    </div>
+
+                </div>
+
+                <div class="envoi">
+                    <button type="submit" class="bouton bouton--blue">ENVOYER</button>
+                </div>
+    
+            </form>     
+        </div>
+         
+    </div>
+
+    </section> -->    
+    
+    <!-- Fin section4-->
+
+
+    <script src="js/data_connexion.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>

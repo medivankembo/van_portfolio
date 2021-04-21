@@ -1,0 +1,27 @@
+@import 'variables.scss';
+@mixin trait($couleur){
+    margin:0;    
+    &--couleur{
+        width: 5%;
+        color: ($couleur);
+    }   
+}
+
+
+@mixin titre-section{
+    margin: 0;
+
+    .style{
+
+        font-size: 2rem;
+    }
+    hr{
+        margin: 0;
+        &--style{
+            width: 5%;
+            background-color: #00ff00;
+            color : #00ff00
+        }
+              
+    }
+}

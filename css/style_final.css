@@ -1,0 +1,226 @@
+.bouton {
+  padding: 10px;
+  border-radius: 10px; }
+  .bouton--blanc {
+    background-color: #ffffff;
+    color: #020014;
+    font-weight: bold;
+    border: solid 2px #ffffff; }
+    .bouton--blanc:hover {
+      background-color: transparent;
+      color: #ffffff; }
+  .bouton--blue {
+    background-color: #020014;
+    color: #ffffff;
+    border: solid 2px #020014;
+    font-weight: bold; }
+    .bouton--blue:hover {
+      background-color: transparent;
+      color: #020014; }
+
+.titre-section {
+  margin: 0; }
+  .titre-section--style {
+    font-size: 2rem; }
+
+.soulignement {
+  margin-bottom: 2%; }
+  .soulignement--rouge {
+    width: 5%;
+    background-color: #e00303;
+    margin-bottom: 2%; }
+  .soulignement--blanc {
+    width: 5%;
+    background-color: #ffffff;
+    margin-bottom: 2%; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+* {
+  box-sizing: border-box; }
+
+.menu {
+  box-sizing: border-box; }
+  .menu--style {
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: bold; }
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  box-sizing: border-box; }
+  .section1__image-fond {
+    height: 100%; }
+    .section1__image-fond--style {
+      /* The image used */
+      background-color: #020014;
+      background-image: url("../media/images/bg_image.jpg");
+      /* Add the blur effect */
+      filter: blur(8px);
+      -webkit-filter: blur(8px);
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+  .section1__message {
+    margin: 0; }
+    .section1__message--style {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 80%;
+      background-color: #000000;
+      /* Fallback color */
+      background-color: #00000066;
+      /* Black w/opacity/see-through */
+      color: white;
+      font-weight: bold;
+      border: 3px solid #e00303;
+      padding: 3% 0; }
+      .section1__message--style h1 {
+        font-size: 3rem;
+        font-weight: 700; }
+      .section1__message--style p {
+        font-size: 1.5rem;
+        font-weight: bold;
+        font-style: oblique; }
+
+.section2 {
+  margin: 0; }
+  .section2--style {
+    padding: 3% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-justify: center;
+    justify-content: center;
+    background-color: #f2f3f5; }
+  .section2 .message-section {
+    margin: 0; }
+    .section2 .message-section--style {
+      font-size: 1.3rem;
+      padding: 1%; }
+
+.section3 {
+  margin: 0; }
+  .section3--style {
+    display: flex;
+    flex-direction: column;
+    padding: 3% 0 5%;
+    align-items: center; }
+  .section3 .carte {
+    margin: 3%; }
+    .section3 .carte--style {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 50%;
+      padding: 2%;
+      border: solid 1px #e00303; }
+    .section3 .carte__photo {
+      margin: 0; }
+      .section3 .carte__photo--style {
+        width: 20%;
+        height: 20%; }
+        .section3 .carte__photo--style img {
+          width: 100%;
+          height: 100%; }
+    .section3 .carte__texte {
+      margin: 0; }
+      .section3 .carte__texte--style {
+        width: 75%;
+        height: 75%;
+        font-size: 1.3rem; }
+      .section3 .carte__texte .nom-developpeur {
+        font-weight: bold;
+        font-size: 2rem;
+        text-align: center;
+        color: #e00303; }
+      .section3 .carte__texte .biographie-developpeur {
+        text-justify: justify; }
+
+.section4 {
+  margin: 0;
+  padding: 3% 0 0;
+  box-sizing: border-box; }
+  .section4--style {
+    background-color: #f2f3f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #020014;
+    text-align: center; }
+  .section4 .formulaire {
+    margin: O;
+    /*
+            &__titre{
+                    margin-bottom: 2%;
+                    &--style{
+                        padding-bottom: 2%;
+                        background-color: $blue;
+                        color: $blanc;
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                    }
+            }
+            &__note{
+                margin: 5% 0;
+                &--style{
+                    color: $blue;
+                    font-size: 1rem;
+                }
+            }
+            &__contenu{
+                margin: 0;
+                &--style{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-bottom: 5%;
+                }
+                .saisie{
+                    flex-wrap: wrap;
+                    margin: 0;
+                    &--style{
+                        display: flex;    
+                        flex-direction: column;
+                        width: 100%;
+                        flex: 1;
+                    }
+                    &__pour-inputs{
+                        margin: 1.5% 0;
+                        &--style{
+                            padding: 1.5%;
+                            justify-content: space-between;
+                            color: $blue;
+                            flex: 1;
+                        }
+                    }
+                    &__pour-textarea{
+                        &--style{
+                            padding: 1.5%;
+                            color: $blue;
+                        }
+                    }
+                    
+                }
+            }
+    */ }
+    .section4 .formulaire--style {
+      display: flex;
+      flex-direction: column;
+      padding: 2%;
+      border: solid 1px #999999; }
+
+/*# sourceMappingURL=style_final.css.map */

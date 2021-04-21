@@ -1,0 +1,51 @@
+//Boutons
+.bouton{
+    padding: 10px;
+    border-radius: 10px;
+    &--blanc{
+        background-color: $blanc;
+        color: $blue;
+        font-weight: bold;
+        border: solid 2px $blanc;
+        &:hover{
+            background-color: transparent;
+            color: $blanc;
+        }
+
+    }
+    &--blue{
+        background-color: $blue;
+        color: $blanc;
+        border: solid 2px $blue;
+        font-weight: bold;
+        &:hover{
+            background-color: transparent;
+            color: $blue;
+        }
+    }
+}
+
+// Titres de blocs
+.titre-section{
+    margin: 0;
+
+    &--style{
+
+        font-size: 2rem;
+    }
+}
+
+.soulignement{
+    margin-bottom: 2%;
+    &--rouge{
+        width: 5%;
+        background-color: $rouge;
+        margin-bottom: 2%;
+    }
+    &--blanc{
+        width: 5%;
+        background-color: $blanc;
+        margin-bottom: 2%;
+    }
+            
+}
