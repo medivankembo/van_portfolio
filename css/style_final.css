@@ -98,6 +98,8 @@ body {
 
 .section2 {
   margin: 0; }
+  .section2 img {
+    height: 80%; }
   .section2--style {
     padding: 3% 0;
     display: flex;
@@ -135,7 +137,9 @@ body {
         height: 20%; }
         .section3 .carte__photo--style img {
           width: 100%;
-          height: 100%; }
+          height: 100%;
+          border-radius: 50%;
+          background-color: #020014; }
     .section3 .carte__texte {
       margin: 0; }
       .section3 .carte__texte--style {

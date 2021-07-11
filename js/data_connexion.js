@@ -1,28 +1,33 @@
 //identite
-let noms = document.querySelector("#grandTitre");
-let domaine = document.querySelector("#domaine");
-fetch("http://localhost:3000/identite")
-.then(function(identite){
-//    console.log(identite.json())
-return identite.json()
-})
-.then(function(identiteTableau){
-    identiteTableau.forEach(element => {
-        noms.innerHTML= element
+
+fetch(
+  "https://my-json-server.typicode.com/medivankembo/Portfolio.json/identite"
+).then(function (identite) {
+  return identite
+    .json()
+
+    .then(function (identiteTableau) {
+      console.log("Data :", identiteTableau);
+      const noms = document.querySelector("#grandTitre");
+      const domaine = document.querySelector("#domaine");
+      const nomsAuteur = document.querySelector("#nomsAuteur");
+      const aproposAuteur = document.querySelector("#aproposAuteur");
+
+      identiteTableau.forEach((element) => {
+        noms.innerHTML = element;
         noms.innerText = `${element.prenom}  ${element.nom}`;
         domaine.innerText = `${element.domaine}`;
-
+        nomsAuteur.innerText = `${element.prenom}  ${element.nom} ${element.postnom}`;
+        aproposAuteur.innerText = `${element.apropos}`;
+      });
     });
-})
-
+});
 // Projets
-fetch("http://localhost:3000/projet")
-.then(function(Projets){
-//    console.log(Projets.json())
-return Projets.json()
-})
-.then(function(projetsTableau){
-    projetsTableau.forEach(element => {
-        
-    });
-})
+fetch("https://my-json-server.typicode.com/medivankembo/Portfolio.json/projet")
+  .then(function (Projets) {
+    console.log(Projets.json());
+    return Projets.json();
+  })
+  .then(function (projetsTableau) {
+    projetsTableau.forEach((element) => {});
+  });
